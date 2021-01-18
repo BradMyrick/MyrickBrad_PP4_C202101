@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'app',
     # Add your apps here to enable them
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -56,10 +57,12 @@ ROOT_URLCONF = 'MyrickBrad_PP4_C202101.urls'
 
 # Template configuration
 # https://docs.djangoproject.com/en/2.1/topics/templates/
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),
+                 os.path.join(BASE_DIR, 'app', 'templates', 'app')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

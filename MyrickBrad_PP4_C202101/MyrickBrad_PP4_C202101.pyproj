@@ -68,6 +68,7 @@
     <Content Include="app\static\app\img\IMG_1122-2.jpg" />
     <Content Include="app\static\app\img\PLicon.png" />
     <Content Include="app\templates\app\about.html" />
+    <Content Include="app\templates\app\Base.html" />
     <Content Include="app\templates\app\Discover.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
